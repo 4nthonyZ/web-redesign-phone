@@ -1,4 +1,4 @@
-/* ===== 全局纹理背景 ===== */
+
 body {
   margin: 0;
   font-family: 'Lora', serif;
@@ -11,7 +11,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url('../assets/images/texture-texture-g.jpg'); /* 布纹背景 */
+  background-image: url('../assets/images/texture-texture-g.jpg'); 
   background-repeat: repeat;
   background-size: auto;
   opacity: 0.9;
@@ -20,7 +20,7 @@ body::before {
 }
 
 
-/* ===== 顶部导航栏 ===== */
+
 .topbar {
   background-color: #1C3421;
   display: flex;
@@ -35,7 +35,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('../assets/images/paper-texture-g.jpg'); /* 顶栏纸纹 */
+  background-image: url('../assets/images/paper-texture-g.jpg'); 
   background-repeat: repeat;
   background-size: cover;
   opacity: 0.2;
@@ -43,7 +43,7 @@ body::before {
   z-index: 0;
 }
 
-/* 中间文字 LOGO */
+
 .nav-title {
   text-align: center;
   flex-grow: 1;
@@ -65,7 +65,7 @@ body::before {
   display: block;
 }
 
-/* 左右按钮区域宽度固定，防止内容撑开 */
+
 .nav-left, .nav-right {
   width: 50px;
   display: flex;
@@ -95,7 +95,7 @@ body::before {
 }
 
 
-/* ===== 图标功能区（Trial Return 等） ===== */
+
 .info-icons {
   background-color: #1C3421;
   color: white;
@@ -112,7 +112,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('../assets/images/paper-texture-g.jpg'); /* 功能图标区纸纹 */
+  background-image: url('../assets/images/paper-texture-g.jpg'); 
   background-repeat: repeat;
   background-size: cover;
   opacity: 0.2;
@@ -138,14 +138,14 @@ body::before {
 }
 
 
-/* ===== Featured 区块 ===== */
+
 .featured-section {
   background-color: #ECE6DA;
-  padding: 2rem 1rem 3rem; /* 保留底部空间 */
+  padding: 2rem 1rem 3rem; 
   text-align: center;
   position: relative;
   z-index: 1;
-  /* 去掉 min-height: 100vh */
+ 
 }
 
 
@@ -153,7 +153,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('../assets/images/paper-texture-y.jpg'); /* 卡其纸纹 */
+  background-image: url('../assets/images/paper-texture-y.jpg'); 
   background-repeat: repeat;
   background-size: cover;
   opacity: 0.2;
@@ -182,8 +182,8 @@ body::before {
 
 
 .featured-card {
-  width: 30%;              /* 每个卡片占 45% 宽度 */
-  max-width: 160px;        /* 限制最大宽度，避免溢出 */
+  width: 30%;             
+  max-width: 160px;        
   background-color: #F5F0E8;
   padding: 1rem;
   border-radius: 16px;
@@ -211,10 +211,10 @@ body::before {
   text-decoration: none;
 }
 .featured-card img:hover {
-  transform: scale(1.08); /* 小幅缩放动画 */
+  transform: scale(1.08); 
 }
 
-/* 卡片本身的动画也可以有 */
+
 .featured-card {
   transition: transform 0.2s ease;
 }
@@ -225,7 +225,269 @@ body::before {
 }
 .hero-img {
   width: 390px;
-  max-height: 500px;  /* 控制在手机屏幕合适高度 */
+  max-height: 500px;  
   object-fit: cover;
   display: block;
+}
+
+.price {
+  font-size: 0.9rem;
+  color: #1C3421;
+  margin-top: 0.2rem;
+}
+.category-header {
+  background-color: #1C3421;
+  text-align: center;
+  padding: 0.8rem 1rem;
+}
+
+.category-header h2 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.sort-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  font-family: 'Lora', serif;
+  font-size: 0.9rem;
+  color: #1C3421;
+  border-bottom: 1px solid #ccc;
+  background-color: #ECE6DA;
+}
+
+.product-list {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #ECE6DA;
+}
+
+.list-item {
+  background-color: #F5F0E8;
+  border-radius: 16px;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.list-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-name {
+  font-weight: bold;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.price {
+  color: #1C3421;
+  margin: 0.4rem 0;
+}
+
+.add-cart {
+  background-color: #C9AC72;
+  color: #1C3421;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  font-family: 'Lora', serif;
+  cursor: pointer;
+}
+.browse-content {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: #ECE6DA;
+}
+
+
+.filter-panel h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.filter-group {
+  margin-bottom: 1rem;
+}
+
+.filter-group p {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: white;
+}
+
+.filter-panel label {
+  display: block;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+
+.filter-panel {
+  display: none;
+  position: fixed;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 380px;
+  max-height: 85vh;
+  background-color: #1C3421;
+  color: #C9AC72;
+  padding: 1.5rem 1.2rem;
+  z-index: 100;
+  overflow-y: auto;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.filter-panel.active {
+  display: block;
+}
+
+
+.close-btn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+.product-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 1rem;
+  padding: 1rem 0;
+  background-color: #ECE6DA;
+}
+
+
+body.product-detail {
+  background-color: #1C3421;
+  color: #C9AC72;
+  font-family: 'Lora', serif;
+  text-align: center;
+}
+
+
+.detail-img {
+  width: 80%;
+  max-width: 300px;
+  margin: 1.5rem auto 1rem;
+  display: block;
+  object-fit: contain;
+}
+
+
+.detail-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #C9AC72;
+}
+
+
+.stars {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+  color: gold;
+}
+
+.rating {
+  color: #C9AC72;
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
+}
+
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #C9AC72;
+  margin: 0.5rem 0;
+}
+
+
+.desc {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 1rem auto 2rem;
+  padding: 0 1rem;
+  color: #EADFA8;
+}
+
+
+button.wide {
+  background-color: transparent;
+  border: 1px solid #C9AC72;
+  color: #C9AC72;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button.wide:hover {
+  background-color: #C9AC72;
+  color: #1C3421;
+}
+
+.product-gallery {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.main-image {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.thumbnail-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 0.5rem auto;
+  flex-wrap: wrap;
+}
+
+.thumb {
+  width: 60px;
+  height: 60px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  object-fit: cover;
+  transition: border 0.2s;
+}
+
+.thumb:hover {
+  border-color: #C9AC72;
 }
