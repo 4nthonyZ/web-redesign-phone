@@ -1,0 +1,231 @@
+/* ===== 全局纹理背景 ===== */
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  background-color: #F5F0E8;
+  color: #1C3421;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('../assets/images/texture-texture-g.jpg'); /* 布纹背景 */
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+/* ===== 顶部导航栏 ===== */
+.topbar {
+  background-color: #1C3421;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.topbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/images/paper-texture-g.jpg'); /* 顶栏纸纹 */
+  background-repeat: repeat;
+  background-size: cover;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 中间文字 LOGO */
+.nav-title {
+  text-align: center;
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-title h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  margin: 0;
+  color: #C9AC72;
+}
+
+.nav-title .subtitle {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #C9AC72;
+  display: block;
+}
+
+/* 左右按钮区域宽度固定，防止内容撑开 */
+.nav-left, .nav-right {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  gap: 0.3rem;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-title h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle {
+  display: block;
+  font-size: 0.7rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+/* ===== 图标功能区（Trial Return 等） ===== */
+.info-icons {
+  background-color: #1C3421;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.info-icons::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/images/paper-texture-g.jpg'); /* 功能图标区纸纹 */
+  background-repeat: repeat;
+  background-size: cover;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.75rem;
+  z-index: 1;
+}
+
+.icon-box img {
+  width: 45px;
+  height: 45px;
+  background-color: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 0.3rem;
+}
+
+
+/* ===== Featured 区块 ===== */
+.featured-section {
+  background-color: #ECE6DA;
+  padding: 2rem 1rem 3rem; /* 保留底部空间 */
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  /* 去掉 min-height: 100vh */
+}
+
+
+.featured-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/images/paper-texture-y.jpg'); /* 卡其纸纹 */
+  background-repeat: repeat;
+  background-size: cover;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.featured-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #1C3421;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #C9AC72;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+.featured-card {
+  width: 30%;              /* 每个卡片占 45% 宽度 */
+  max-width: 160px;        /* 限制最大宽度，避免溢出 */
+  background-color: #F5F0E8;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+
+
+.featured-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.featured-card p {
+  margin: 0;
+  font-weight: bold;
+}
+.featured-card a {
+  display: inline-block;
+  text-decoration: none;
+}
+.featured-card img:hover {
+  transform: scale(1.08); /* 小幅缩放动画 */
+}
+
+/* 卡片本身的动画也可以有 */
+.featured-card {
+  transition: transform 0.2s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.hero-img {
+  width: 390px;
+  max-height: 500px;  /* 控制在手机屏幕合适高度 */
+  object-fit: cover;
+  display: block;
+}
