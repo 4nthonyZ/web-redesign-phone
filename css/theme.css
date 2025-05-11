@@ -491,3 +491,13 @@ button.wide:hover {
 .thumb:hover {
   border-color: #C9AC72;
 }
+
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo:visited {
+  text-decoration: none;
+  color: inherit;
+}
