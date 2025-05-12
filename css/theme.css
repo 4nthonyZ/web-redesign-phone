@@ -1,5 +1,8 @@
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   font-family: 'Lora', serif;
   background-color: #F5F0E8;
@@ -500,4 +503,128 @@ button.wide:hover {
 .logo:visited {
   text-decoration: none;
   color: inherit;
+}
+.menu-page {
+  background-color: #1C3421;
+  color: white;
+  font-family: 'Lora', serif;
+  padding: 1rem;
+}
+
+.menu-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-topbar h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #C9AC72;
+}
+
+.menu-close-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.menu-search input {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  margin: 1.2rem 0;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem auto;
+  max-width: 90%;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.faq-item {
+  background-color: #F5F0E8;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+.faq-question {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.faq-answer {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+/* 激活状态 */
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Footer 最小高度 */
+.footer {
+  background-color: #F5F0E8;
+  text-align: center;
+  padding: 0.6rem 0;
+  font-size: 0.75rem;
+  color: #333;
+  box-shadow: 0 -1px 3px rgba(0,0,0,0.05);
+}
+
+.about-section {
+  background-color: #F5F0E8;
+  padding: 2rem 1.2rem;
+  color: #1C3421;
+}
+
+.about-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
 }

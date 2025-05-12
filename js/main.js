@@ -23,3 +23,11 @@ function changeImage(thumbnail) {
   thumbnail.classList.add('selected');
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".faq-item");
+  items.forEach(item => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("active");
+    });
+  });
+});

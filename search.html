@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="js/main.js" defer></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=390, initial-scale=1.0" />
-  <title>Browse - Beds</title>
+  <title>Search Results</title>
   <link rel="stylesheet" href="css/theme.css" />
 </head>
 <body>
@@ -31,80 +30,40 @@
 
 
   <section class="category-header">
-    <h2>Beds</h2>
+    <h2>Search Results</h2>
   </section>
 
 
-<section class="sort-bar">
-  <span>SORT BY</span>
-  <span class="price-sort" onclick="toggleFilter()">Price &gt;</span>
-</section>
-
->
-<section class="browse-content">
-
-
-  <div class="filter-panel" id="filterPanel">
-    <img src="assets/images/close.png" class="close-btn" alt="Close" onclick="closeFilter()" />
-
-    <h3>FILTER</h3>
-
-    <div class="filter-group">
-      <p>Availability</p>
-      <label><input type="checkbox" checked /> In Stock</label>
-      <label><input type="checkbox" /> Out of Stock</label>
-    </div>
-
-    <div class="filter-group">
-      <p>Price</p>
-      <input type="range" min="500" max="1200" value="800" />
-      <p>$500 – $1200</p>
-    </div>
-
-    <div class="filter-group">
-      <p>Size</p>
-      <label><input type="radio" name="size" /> Queen</label>
-      <label><input type="radio" name="size" /> King</label>
-      <label><input type="radio" name="size" /> Single</label>
-      <label><input type="radio" name="size" /> Double</label>
-    </div>
-
-    <div class="filter-group">
-      <p>Style</p>
-      <label><input type="radio" name="style" /> Classic</label>
-      <label><input type="radio" name="style" /> Modern</label>
-    </div>
-  </div>
-
-
+  <section class="browse-content">
     <section class="product-list">
-    <div class="list-item">
+
+      <div class="list-item">
         <a href="product-a.html"><img src="assets/images/bedA.png" alt="Bed A" /></a>
         <div class="item-info">
-        <p class="item-name">Beds A</p>
-        <p class="price">$199</p>
-        <button class="add-cart">ADD TO CART</button>
+          <p class="item-name">Bed A</p>
+          <p class="price">$199</p>
+          <button class="add-cart">ADD TO CART</button>
         </div>
-    </div>
+      </div>
 
-    <div class="list-item">
+      <div class="list-item">
         <a href="product-b.html"><img src="assets/images/bedB.png" alt="Bed B" /></a>
         <div class="item-info">
-        <p class="item-name">Beds B</p>
-        <p class="price">$199</p>
-        <button class="add-cart">ADD TO CART</button>
+          <p class="item-name">Bed B</p>
+          <p class="price">$199</p>
+          <button class="add-cart">ADD TO CART</button>
         </div>
-    </div>
+      </div>
 
-    <div class="list-item">
+      <div class="list-item">
         <a href="product-c.html"><img src="assets/images/bedC.png" alt="Bed C" /></a>
         <div class="item-info">
-        <p class="item-name">Beds C</p>
-        <p class="price">$199</p>
-        <button class="add-cart">ADD TO CART</button>
+          <p class="item-name">Bed C</p>
+          <p class="price">$199</p>
+          <button class="add-cart">ADD TO CART</button>
         </div>
-    </div>
-    <div class="list-item">
+      </div>
+          <div class="list-item">
         <img src="assets/images/placeholder.png" alt="Bed D">
         <div class="item-info">
         <p class="item-name">Beds D</p>
@@ -130,7 +89,6 @@
     </div>
 
     </section>
-
   </section>
 
 
