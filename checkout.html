@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="js/main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=390, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="css/theme.css" />
+</head>
+<body>
+
+
+  <header class="topbar">
+    <div class="nav-left">
+      <a href="menu.html">
+        <img src="assets/images/ham.png" class="icon" alt="menu" />
+      </a>>
+    </div>
+    <div class="nav-title">
+        <a href="index.html" class="logo">
+          <h1>JOE CALVI</h1>
+        </a>
+      <span class="subtitle">FINE FURNITURE</span>
+    </div>
+    <div class="nav-right">
+      <a href="cart.html">
+        <img src="assets/images/cart.png" class="icon" alt="Cart" />
+        <span id="cart-count" class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+
+  <main class="checkout-section" style="padding: 2rem 1rem;">
+    <h2 style="text-align: center; margin-bottom: 1rem;">Checkout</h2>
+
+    <form class="checkout-form" id="checkout-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Full Name" required />
+
+      <label for="address">Address</label>
+      <textarea id="address" rows="3" placeholder="Shipping Address" required></textarea>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="email@example.com" required />
+
+      <label for="payment">Payment Method</label>
+      <select id="payment" required>
+        <option value="">Select</option>
+        <option>Credit Card</option>
+        <option>PayPal</option>
+        <option>Apple Pay</option>
+      </select>
+
+        <button type="submit" class="checkout-btn" style="margin-top: 1rem;">
+          Confirm Order
+        </button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Joe Calvi. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

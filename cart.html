@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=390, initial-scale=1.0" />
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="css/theme.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="nav-left">
+      <a href="menu.html">
+        <img src="assets/images/ham.png" class="icon" alt="menu" />
+      </a>>
+    </div>
+    <div class="nav-title">
+        <a href="index.html" class="logo">
+          <h1>JOE CALVI</h1>
+        </a>
+      <span class="subtitle">FINE FURNITURE</span>
+    </div>
+    <div class="nav-right">
+      <a href="cart.html">
+        <img src="assets/images/cart.png" class="icon" alt="Cart" />
+        <span id="cart-count" class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <h1 style="text-align:center">Your Cart</h1>
+
+    <div class="cart-item">
+        <a href="product-a.html">
+            <img src="assets/images/bedA.png" alt="Bed A" class="cart-img" />
+        </a>
+      <div class="cart-details">
+        <p><strong>Bed A</strong></p>
+        <p class="item-price" data-price="199">$199</p>
+        <div class="cart-quantity">
+          <label>Quantity:</label>
+          <button class="decrease">−</button>
+          <span class="quantity">1</span>
+          <button class="increase">+</button>
+        </div>
+        <button class="remove-btn">
+          <img src="assets/images/delete.png" alt="Remove" class="remove-icon" />
+        </button>
+      </div>
+    </div>
+
+    <div class="cart-item">
+        <a href="product-b.html">
+            <img src="assets/images/bedB.png" alt="Bed A" class="cart-img" />
+        </a>
+      <div class="cart-details">
+        <p><strong>Bed B</strong></p>
+        <p class="item-price" data-price="249">$249</p>
+        <div class="cart-quantity">
+          <label>Quantity:</label>
+          <button class="decrease">−</button>
+          <span class="quantity">1</span>
+          <button class="increase">+</button>
+        </div>
+        <button class="remove-btn">
+          <img src="assets/images/delete.png" alt="Remove" class="remove-icon" />
+        </button>
+      </div>
+    </div>
+
+    <div class="cart-item">
+        <a href="product-c.html">
+            <img src="assets/images/bedC.png" alt="Bed A" class="cart-img" />
+        </a>
+      <div class="cart-details">
+        <p><strong>Bed C</strong></p>
+        <p class="item-price" data-price="299">$299</p>
+        <div class="cart-quantity">
+          <label>Quantity:</label>
+          <button class="decrease">−</button>
+          <span class="quantity">1</span>
+          <button class="increase">+</button>
+        </div>
+        <button class="remove-btn" aria-label="Remove item">
+            <img src="assets/images/delete.png" alt="Remove" class="remove-icon" />
+        </button>
+      </div>
+    </div>
+
+    <div class="cart-total">
+      Total: $<span id="total-price">0</span>
+    </div>
+    <div class="checkout-bar">
+        <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Joe Calvi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
